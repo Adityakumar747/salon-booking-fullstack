@@ -150,9 +150,12 @@ import { Suspense } from 'react'
 
 export default function ServicesPage() {
     return (
-        <div className="min-h-screen pt-32 pb-24 px-6">
+        <div className="min-h-screen pt-32 pb-24 px-6 bg-[#fafafa]">
+            <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-brand-red/[0.03] to-transparent pointer-events-none" />
             <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading catalog...</div>}>
-                <ServicesContent />
+                <div className="relative z-10">
+                    <ServicesContent />
+                </div>
             </Suspense>
         </div>
     )
