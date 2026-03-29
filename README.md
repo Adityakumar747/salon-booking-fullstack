@@ -116,7 +116,8 @@ npm run dev
 ---
 
 ## 🤝 Contributing
-Contributions are welcome. Feel free to fork the repository and submit an issue or a pull request.
+*Developed for professional internship applications and recruitment showcases. 🚀*
+Feel free to fork the repository and submit an issue or a pull request.
 
 ## 📄 License
 This project is licensed under the MIT License.
