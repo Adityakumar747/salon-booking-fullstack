@@ -21,12 +21,18 @@ const app = express();
 // Security middleware
 app.use(helmet());
 app.use(cors({
-    origin: [
-        process.env.CLIENT_URL || 'http://localhost:3000',
-        'https://salon-booking-fullstack.vercel.app',
-        'http://127.0.0.1:3000',
-        'http://localhost:3000'
-    ],
+    origin: (origin, callback) => {
+        const allowedOrigins = [
+            process.env.CLIENT_URL || 'http://localhost:3000',
+            'http://127.0.0.1:3000',
+            'http://localhost:3000'
+        ];
+        if (!origin || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials: true,
 }));
 
