@@ -17,10 +17,12 @@ export default function GalleryPage() {
     })
 
     const assetImages = [
-        '/assets/photos/Gemini_Generated_Image_6o8xj6o8xj6o8xj6.png',
-        '/assets/photos/Gemini_Generated_Image_j01uicj01uicj01u.png',
-        '/assets/photos/b_create_a_such_and_lu.jpeg',
-        '/assets/photos/imagen-4.0-ultra-generate-001_b_i_want_a_photo_of_a.png',
+        '/assets/photos/hair-service.png',
+        '/assets/photos/facial-service.png',
+        '/assets/photos/bridal-service.png',
+        '/assets/photos/barber-service.png',
+        '/assets/photos/hair-kids-service.png',
+        '/assets/photos/hair-color-service.png',
     ]
 
     const getPlaceholderImages = () => {

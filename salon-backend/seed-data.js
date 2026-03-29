@@ -7,6 +7,7 @@ dotenv.config();
 const Service = require('./src/models/Service');
 const SalonSettings = require('./src/models/SalonSettings');
 const Stylist = require('./src/models/Stylist');
+const GalleryImage = require('./src/models/GalleryImage');
 
 const logFile = 'y:\\antigravity\\works\\salon-platform\\salon-backend\\seed_data_log.txt';
 const log = (msg) => {
@@ -151,6 +152,15 @@ const stylists = [
     },
 ];
 
+const gallery = [
+    { cloudinaryUrl: '/assets/photos/hair-service.png', caption: 'Heritage Hair Artistry', category: 'hair' },
+    { cloudinaryUrl: '/assets/photos/facial-service.png', caption: 'Luxury Skin Rituals', category: 'skin' },
+    { cloudinaryUrl: '/assets/photos/bridal-service.png', caption: 'Master Bridal Transformation', category: 'bridal' },
+    { cloudinaryUrl: '/assets/photos/barber-service.png', caption: 'Classic Grooming Excellence', category: 'grooming' },
+    { cloudinaryUrl: '/assets/photos/hair-kids-service.png', caption: 'Gentle Kids Styling', category: 'kids' },
+    { cloudinaryUrl: '/assets/photos/hair-color-service.png', caption: 'Vibrant Hair Expressions', category: 'hair' },
+];
+
 const salonSettings = {
     openTime: '09:00',
     closeTime: '21:00',
@@ -184,6 +194,11 @@ async function seedData() {
         await Stylist.deleteMany();
         await Stylist.insertMany(stylists);
         log(`✅ ${stylists.length} stylists re-synced`);
+
+        // Seed Gallery
+        await GalleryImage.deleteMany();
+        await GalleryImage.insertMany(gallery);
+        log(`✅ ${gallery.length} gallery images seeded`);
         log('');
         log('🎉 Seed complete! Your salon platform is ready.');
         log('');
