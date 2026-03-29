@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #D62828;
+  --color-brand-red-dark: #B91D1D;
+  --color-brand-white: #FFFFFF;
+  --color-brand-black: #111111;
+  --color-brand-black-light: #1A1A1A;
+  --color-brand-gold: #C9A227;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Outfit", sans-serif;
+}
+
+@layer base {
+  :root {
+    --brand-red: #D62828;
+    --brand-black: #111111;
+    --brand-gold: #C9A227;
+    --brand-white: #FFFFFF;
+  }
+
+  body {
+    background-color: var(--brand-white);
+    color: var(--brand-black);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    color: var(--brand-black);
+  }
+}
+
+@layer components {
+  .btn-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2.5rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background-color: var(--brand-red);
+    color: white;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-red:hover {
+    background-color: #B91D1D;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(214, 40, 40, 0.2);
+  }
+
+  .btn-outline-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2.5rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 1px solid var(--brand-red);
+    color: var(--brand-red);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: transparent;
+  }
+
+  .btn-outline-red:hover {
+    background-color: var(--brand-red);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .red-divider {
+    width: 4rem;
+    height: 2px;
+    margin: 1rem auto;
+    background-color: var(--brand-red);
+  }
+
+  .section-heading {
+    font-family: var(--font-serif);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    color: var(--brand-black);
+  }
+
+  @media (min-width: 768px) {
+    .section-heading {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--brand-black);
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  .nav-link:hover {
+    color: var(--brand-red);
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+
+  to {
+    background-position: 200% 0;
+  }
+}
