@@ -1,62 +1,155 @@
-# Jawed Habib Salon Platform
+# 💇‍♂️ Salon Booking Fullstack Platform
 
-A premium full-stack salon management and booking platform built for the Jawed Habib franchise. This application provides a seamless experience for users to explore luxury services and book appointments with heritage stylists.
+A modern full-stack salon management and booking platform built using the MERN + Next.js ecosystem. This application enables users to explore services, book appointments, and manage salon operations efficiently.
 
-## 🚀 Features
+---
 
-- **Heritage Branding**: Custom design language reflecting the Jawed Habib legacy.
-- **Dynamic Service Catalog**: Browse services by category (Hair, Skin, Bridal, Grooming) and audience (Men, Women, Kids).
-- **Smart Booking System**: Real-time slot availability, stylist selection, and automated scheduling.
-- **User Dashboard**: Manage your profile, view upcoming appointments, and booking history.
-- **Admin Suite**: Comprehensive dashboard for managing services, stylists, and salon operations.
+## 🚀 Live Demo
+
+👉 https://your-live-link.vercel.app
+
+---
+
+## 🚀 Overview
+
+This platform delivers a seamless and scalable experience for both customers and administrators. It includes a user-friendly interface, secure authentication, and a powerful backend for managing salon services and bookings.
+
+---
+
+## ✨ Key Features
+
+- Modern and responsive UI/UX  
+- Dynamic service catalog (Hair, Skin, Grooming, etc.)  
+- Appointment booking system  
+- User dashboard for managing bookings  
+- Secure authentication using JWT  
+- Admin panel for managing services and users  
+- Optimized performance and scalability  
+
+---
 
 ## 🛠 Tech Stack
 
 ### Frontend
-- **Framework**: Next.js 15 (App Router)
-- **Styling**: Tailwind CSS (Custom Theme)
-- **State Management**: React Context & TanStack Query (React Query)
-- **Animations**: Framer Motion
-- **Form Handling**: React Hook Form & Zod
+- Next.js (App Router)  
+- React.js  
+- Tailwind CSS  
+- Framer Motion  
+- React Query  
 
 ### Backend
-- **Runtime**: Node.js & Express
-- **Database**: MongoDB Atlas (Mongoose)
-- **Security**: JWT Authentication, Helmet, Rate Limiting
-- **File Storage**: Cloudinary API for media assets
+- Node.js  
+- Express.js  
+- MongoDB Atlas  
+- Mongoose  
 
-## 📦 Project Structure
+### Tools & Services
+- JWT Authentication  
+- Cloudinary (Media Storage)  
+- React Hook Form & Zod  
 
-```bash
-salon-platform/
-├── salon-frontend/ # Next.js application
-└── salon-backend/  # Express API server
-```
+---
+
+## 📸 Screenshots
+
+### 🏠 Homepage / Hero Section
+![Homepage](./screenshots/homepage.png)
+
+### 📅 Booking Summary Page
+![Booking Summary](./screenshots/booking-summary.png)
+
+---
+
+## 📂 Project Structure
+
+salon-booking-fullstack/
+├── salon-frontend/
+└── salon-backend/
+
+---
 
 ## ⚙️ Setup & Installation
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/salon-platform.git
-cd salon-platform
-```
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/salon-booking-fullstack.git
+cd salon-booking-fullstack
+
+---
 
 ### 2. Backend Setup
-```bash
+
 cd salon-backend
 npm install
-# Create .env based on .env.example
+
+Create a `.env` file and add:
+
+MONGODB_URI=your_mongodb_connection_string  
+JWT_SECRET=your_secret_key  
+CLOUDINARY_URL=your_cloudinary_config  
+
+Run backend:
+
 npm run dev
-```
+
+---
 
 ### 3. Frontend Setup
-```bash
+
 cd ../salon-frontend
 npm install
-# Create .env.local based on .env.local.example
+
+Create `.env.local`:
+
+NEXT_PUBLIC_API_URL=http://localhost:5000  
+
+Run frontend:
+
 npm run dev
-```
+
+---
+
+## 🌐 Deployment
+
+- Frontend → Vercel  
+- Backend → Render / Railway  
+- Database → MongoDB Atlas  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository  
+2. Create a new branch (feature/your-feature)  
+3. Commit your changes  
+4. Open a Pull Request  
+
+---
+
+## 🐞 Bug Reports & Suggestions
+
+If you find any bugs or have suggestions:
+
+- Open an Issue in this repository  
+- Clearly describe the problem  
+- Include steps to reproduce (if applicable)  
+
+---
 
 ## 📄 License
 
-This project is for educational/internship application purposes. All branding rights belong to Jawed Habib.
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, consider giving it a star on GitHub.
+
+---
+
+## 👨‍💻 Author
+
+Aditya Kumar
