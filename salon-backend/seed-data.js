@@ -157,7 +157,7 @@ const gallery = [
     { cloudinaryUrl: '/assets/photos/facial-service.png', publicId: 'local-facial', caption: 'Luxury Skin Rituals', category: 'skin' },
     { cloudinaryUrl: '/assets/photos/bridal-service.png', publicId: 'local-bridal', caption: 'Master Bridal Transformation', category: 'bridal' },
     { cloudinaryUrl: '/assets/photos/barber-service.png', publicId: 'local-barber', caption: 'Classic Grooming Excellence', category: 'grooming' },
-    { cloudinaryUrl: '/assets/photos/hair-kids-service.png', publicId: 'local-kids', caption: 'Gentle Kids Styling', category: 'kids' },
+    { cloudinaryUrl: '/assets/photos/hair-kids-service.png', publicId: 'local-kids', caption: 'Gentle Kids Styling', category: 'hair' },
     { cloudinaryUrl: '/assets/photos/hair-color-service.png', publicId: 'local-color', caption: 'Vibrant Hair Expressions', category: 'hair' },
 ];
 
