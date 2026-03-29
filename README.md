@@ -125,5 +125,4 @@ This project is licensed under the MIT License.
 **Aditya Kumar**
 - GitHub: [@Adityakumar747](https://github.com/Adityakumar747)
 
----
-*Developed for professional internship applications and recruitment showcases.*
+
