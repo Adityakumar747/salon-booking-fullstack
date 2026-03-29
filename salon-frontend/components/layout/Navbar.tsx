@@ -106,7 +106,11 @@ export default function Navbar() {
                         >
                             <Link
                                 href={link.href}
-                                className={`nav-link flex items-center gap-1.5 py-1 px-1 transition-colors duration-500 ${scrolled ? 'text-brand-black' : 'text-brand-white'} ${pathname === link.href ? 'text-brand-red font-semibold' : ''}`}
+                                className={`nav-link flex items-center gap-1.5 py-1 px-1 transition-all duration-500 ${scrolled ? 'text-brand-black' : 'text-white'
+                                    } ${pathname === link.href ? 'text-brand-red font-semibold' : ''}`}
+                                style={{
+                                    textShadow: !scrolled ? '0 1px 2px rgba(0,0,0,0.1)' : 'none'
+                                }}
                             >
                                 <span className="relative">
                                     {link.label}
