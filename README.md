@@ -10,7 +10,7 @@ A modern, high-luxury full-stack salon management and booking platform built usi
 ---
 
 ## 🚀 Live Demo
-👉 **[Live on Vercel](https://your-live-link.vercel.app)** *(Link your deployed URL here)*
+👉 **[Live on Vercel](https://salon-booking-fullstack-qm17.vercel.app/)** *(Link your deployed URL here)*
 
 ---
 
