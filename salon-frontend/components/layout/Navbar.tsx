@@ -15,8 +15,8 @@ const navLinks = [
         label: 'Services',
         href: '/services',
         dropdown: [
-            { label: 'Male', href: '/services?audience=male' },
-            { label: 'Female', href: '/services?audience=female' },
+            { label: 'Men', href: '/services?audience=male' },
+            { label: 'Women', href: '/services?audience=female' },
             { label: 'Kids', href: '/services?audience=kids' },
         ]
     },
