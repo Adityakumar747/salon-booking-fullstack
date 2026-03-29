@@ -10,18 +10,21 @@ export default function HeroSection() {
     return (
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-white">
             {/* Background with subtle image overlay */}
-            <div className="absolute inset-0 z-0 opacity-25">
+            <div className="absolute inset-0 z-0 opacity-40">
                 <img
                     src="/assets/photos/salon-hero.png"
                     alt="Salon Background"
-                    className="w-full h-full object-cover grayscale-[20%] contrast-[110%]"
+                    className="w-full h-full object-cover grayscale-[10%] contrast-[105%]"
                 />
             </div>
 
             {/* Background elements */}
             <div className="absolute inset-0 z-0">
                 <div
-                    className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/10 to-white/90"
+                    className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white opacity-40"
+                />
+                <div
+                    className="absolute inset-0 bg-gradient-to-b from-white via-white/10 to-white"
                 />
 
                 {/* Brand Red accent lines */}

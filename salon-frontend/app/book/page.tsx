@@ -359,8 +359,9 @@ function BookingForm() {
 
 export default function BookPage() {
     return (
-        <div className="min-h-screen pt-32 pb-24 px-6">
-            <div className="max-w-7xl mx-auto">
+        <div className="min-h-screen pt-32 pb-24 px-6 bg-[#fafafa]">
+            <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-brand-red/[0.03] to-transparent pointer-events-none" />
+            <div className="max-w-7xl mx-auto relative z-10">
                 <ScrollReveal className="text-center mb-16">
                     <p className="text-xs tracking-[0.5em] uppercase text-brand-red mb-4 font-bold">Reserve Your Slot</p>
                     <h1 className="section-heading text-5xl md:text-7xl font-black uppercase text-brand-black">Online Booking</h1>
